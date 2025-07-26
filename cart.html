@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shopping Bay – Cart</title>
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="animations.css">
+  <style>
+    .cart-section { display:none; animation: fadeIn 1s ease-out forwards; }
+    .cart-section:target { display:block; }
+    #default-message { text-align:center; color:#888; margin-top:3rem; }
+    .product-links{ text-align:center; margin:2rem 0;}
+    .product-links a {
+      background:#333; color:#eee; padding:.6rem 1rem; margin:.5rem; border-radius:4px; display:inline-block; transition: background .3s;
+    }
+    .product-links a:hover { background:#ff5722; }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">Home</a><a href="products.html">Products</a><a href="about.html">About</a>
+    <a href="blog.html">Blog</a><a href="contact.html">Contact</a><a href="cart.html" class="active">Cart</a>
+  </nav>
+
+  <main class="container animate-fade">
+    <h1>Your Cart</h1>
+    <div class="product-links">
+      <p>Simulate Add to Cart:</p>
+      <a href="#product1">Midnight Sneakers</a>
+      <a href="#product2">Noir Watch</a>
+      <a href="#product3">Shadow Hoodie</a>
+      <a href="#product4">Backpack</a>
+      <a href="#product5">Headphones</a>
+    </div>
+    <div id="default-message"><p>Select a product to view it in cart</p></div>
+
+    <div id="product1" class="cart-section">
+      <table class="cart-table">
+        <tr><th>Product</th><th>Price</th><th>Qty</th><th>Total</th></tr>
+        <tr><td><strong>Midnight Sneakers</strong></td><td>₹3,499</td><td>1</td><td>₹3,499</td></tr>
+        <tr class="total-row"><td colspan="3">Grand Total</td><td>₹3,499</td></tr>
+      </table>
+      <a href="checkout.html" class="btn animate-pulse">Checkout</a>
+    </div>
+
+    <div id="product2" class="cart-section">
+      <table class="cart-table"><tr><th>Product</th><th>Price</th><th>Qty</th><th>Total</th></tr>
+        <tr><td><strong>Noir Leather Watch</strong></td><td>₹7,999</td><td>1</td><td>₹7,999</td></tr>
+        <tr class="total-row"><td colspan="3">Grand Total</td><td>₹7,999</td></tr>
+      </table><a href="checkout.html" class="btn animate-pulse">Checkout</a>
+    </div>
+
+    <div id="product3" class="cart-section">
+      <table class="cart-table"><tr><th>Product</th><th>Price</th><th>Qty</th><th>Total</th></tr>
+        <tr><td><strong>Shadow Hoodie</strong></td><td>₹2,899</td><td>1</td><td>₹2,899</td></tr>
+        <tr class="total-row"><td colspan="3">Grand Total</td><td>₹2,899</td></tr>
+      </table><a href="checkout.html" class="btn animate-pulse">Checkout</a>
+    </div>
+
+    <div id="product4" class="cart-section">
+      <table class="cart-table"><tr><th>Product</th><th>Price</th><th>Qty</th><th>Total</th></tr>
+        <tr><td><strong>Blackout Backpack</strong></td><td>₹4,200</td><td>1</td><td>₹4,200</td></tr>
+        <tr class="total-row"><td colspan="3">Grand Total</td><td>₹4,200</td></tr>
+      </table><a href="checkout.html" class="btn animate-pulse">Checkout</a>
+    </div>
+
+    <div id="product5" class="cart-section">
+      <table class="cart-table"><tr><th>Product</th><th>Price</th><th>Qty</th><th>Total</th></tr>
+        <tr><td><strong>Obsidian Headphones</strong></td><td>₹5,799</td><td>1</td><td>₹5,799</td></tr>
+        <tr class="total-row"><td colspan="3">Grand Total</td><td>₹5,799</td></tr>
+      </table><a href="checkout.html" class="btn animate-pulse">Checkout</a>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shopping Bay – Product Details</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="animations.css">
+  <style>
+    .product-detail { display: none; animation: fadeIn 1s ease-out forwards; }
+    .product-detail:target { display: grid; }
+    .product-links { text-align: center; margin: 2rem; }
+    .product-links a {
+      background: #333; color: #eee; padding: 0.6rem 1rem;
+      margin: 0.5rem; display: inline-block; border-radius: 4px;
+      transition: background 0.3s;
+    }
+    .product-links a:hover { background: #ff5722; }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Cart</a>
+  </nav>
+
+  <main class="container">
+    <div class="product-links">
+      <p>Select a Product:</p>
+      <a href="#product1">Midnight Sneakers</a>
+      <a href="#product2">Noir Watch</a>
+      <a href="#product3">Shadow Hoodie</a>
+      <a href="#product4">Backpack</a>
+      <a href="#product5">Headphones</a>
+    </div>
+
+    <div id="product1" class="product-detail detail-grid">
+      <div class="image animate-fade"><img src="sneakers.jpg" alt="Midnight Sneakers"></div>
+      <div class="info animate-fade delay-1">
+        <h2>Midnight Sneakers</h2><p class="price">₹3,499</p>
+        <p>Lightweight, breathable, sleek sneakers designed for night-time adventures and urban boldness.</p>
+        <a href="cart.html#product1" class="btn animate-pulse">Add to Cart</a>
+      </div>
+    </div>
+
+    <div id="product2" class="product-detail detail-grid">
+      <div class="image animate-fade"><img src="watch.jpg" alt="Noir Leather Watch"></div>
+      <div class="info animate-fade delay-1">
+        <h2>Noir Leather Watch</h2><p class="price">₹7,999</p>
+        <p>Luxury in the shadows with precision design and deep-toned leather.</p>
+        <a href="cart.html#product2" class="btn animate-pulse">Add to Cart</a>
+      </div>
+    </div>
+
+    <div id="product3" class="product-detail detail-grid">
+      <div class="image animate-fade"><img src="hoodie.jpg" alt="Shadow Hoodie"></div>
+      <div class="info animate-fade delay-1">
+        <h2>Shadow Hoodie</h2><p class="price">₹2,899</p>
+        <p>Minimalist, ultra-soft fleece hoodie with jet-black finish.</p>
+        <a href="cart.html#product3" class="btn animate-pulse">Add to Cart</a>
+      </div>
+    </div>
+
+    <div id="product4" class="product-detail detail-grid">
+      <div class="image animate-fade"><img src="backpack.jpg" alt="Blackout Backpack"></div>
+      <div class="info animate-fade delay-1">
+        <h2>Blackout Backpack</h2><p class="price">₹4,200</p>
+        <p>Stylish, water-resistant backpack with smart compartments.</p>
+        <a href="cart.html#product4" class="btn animate-pulse">Add to Cart</a>
+      </div>
+    </div>
+
+    <div id="product5" class="product-detail detail-grid">
+      <div class="image animate-fade"><img src="headphones.jpg" alt="Obsidian Headphones"></div>
+      <div class="info animate-fade delay-1">
+        <h2>Obsidian Headphones</h2><p class="price">₹5,799</p>
+        <p>Deep bass, wireless freedom – powerful sound in sleek black design.</p>
+        <a href="cart.html#product5" class="btn animate-pulse">Add to Cart</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
