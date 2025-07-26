@@ -1,1 +1,0 @@
-# Tempelate-Shopping
