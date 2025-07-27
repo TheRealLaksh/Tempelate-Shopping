@@ -1,38 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Shopping Bay – Home</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="animations.css">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="animations.css" />
 </head>
 <body>
-  <nav class="navbar">
-    <a href="index.html" class="active">Home</a>
-    <a href="products.html">Products</a>
-    <a href="about.html">About</a>
-    <a href="blog.html">Blog</a>
-    <a href="contact.html">Contact</a>
-    <a href="cart.html">Cart</a>
-  </nav>
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+      <a href="index.html" class="active" title="Homepage">Home</a>
+      <a href="products.html" title="View Products">Products</a>
+      <a href="about.html" title="About Us">About</a>
+      <a href="blog.html" title="Blog">Blog</a>
+      <a href="contact.html" title="Contact Us">Contact</a>
+      <a href="cart.html" title="Your Cart">Cart</a>
+    </nav>
+  </header>
 
-  <div class="video-bg">
-    <video autoplay muted loop>
-      <source src="bg.mp4" type="video/mp4">
-    </video>
-    <div class="overlay-content">
-      <h1 class="animate-zoom tagline">Shopping Bay</h1>
-      <p class="animate-fade delay-1">Exclusive. Elegant. Exceptional.</p>
-      <a href="products.html" class="btn animate-pulse delay-2">Explore Collection</a>
-    </div>
-    <div class="scroll-down"><span></span></div>
-  </div>
+  <main>
+    <section class="video-bg" aria-label="Background video section">
+      <video autoplay muted loop title="Brand video background">
+        <source src="bg.mp4" type="video/mp4" />
+        Your browser doesn’t support video.
+      </video>
+      <div class="overlay-content">
+        <h1 class="animate-zoom tagline">Shopping Bay</h1>
+        <p class="animate-fade delay-1">Exclusive. Elegant. Exceptional.</p>
+        <a href="products.html" class="btn animate-pulse delay-2" title="Shop Now">Explore Collection</a>
+      </div>
+      <div class="scroll-down" aria-hidden="true"><span></span></div>
+    </section>
 
-  <section class="features">
-    <div class="feature-card animate-fade"><h3>Free Shipping</h3><p>On all orders above ₹2,000</p></div>
-    <div class="feature-card animate-fade delay-1"><h3>24/7 Support</h3><p>We’re always here to help</p></div>
-    <div class="feature-card animate-fade delay-2"><h3>Secure Payments</h3><p>Pay safely via UPI or card</p></div>
-  </section>
+    <section class="features container" aria-labelledby="features-heading">
+      <h2 id="features-heading" class="visually-hidden">Features</h2>
+      <article class="feature-card animate-fade">
+        <h3>Free Shipping</h3>
+        <p>On all orders above ₹2,000</p>
+      </article>
+      <article class="feature-card animate-fade delay-1">
+        <h3>24/7 Support</h3>
+        <p>We’re here anytime you need us</p>
+      </article>
+      <article class="feature-card animate-fade delay-2">
+        <h3>Secure Payments</h3>
+        <p>Pay via UPI or card with confidence</p>
+      </article>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Shopping Bay. All rights reserved.</p>
+  </footer>
 </body>
 </html>
