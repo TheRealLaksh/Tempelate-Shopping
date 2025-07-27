@@ -1,31 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Shopping Bay – Products</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="animations.css">
+  <link rel="stylesheet" href="styles.css" /><link rel="stylesheet" href="animations.css" />
 </head>
 <body>
-  <nav class="navbar">
-    <a href="index.html">Home</a>
-    <a href="products.html" class="active">Products</a>
-    <a href="about.html">About</a>
-    <a href="blog.html">Blog</a>
-    <a href="contact.html">Contact</a>
-    <a href="cart.html">Cart</a>
-  </nav>
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+      <a href="index.html">Home</a>
+      <a href="products.html" class="active">Products</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
 
   <main class="container">
     <h1 class="animate-fade">Our Products</h1>
-    <div class="product-grid">
-      <a href="product-1.html" class="product-card animate-flip"><div class="front"><img src="sneakers.jpg" alt="Midnight Sneakers"></div><div class="back"><h3>Midnight Sneakers</h3><p>₹3,499</p><span class="btn">View</span></div></a>
-      <a href="product-2.html" class="product-card animate-flip"><div class="front"><img src="watch.jpg" alt="Noir Leather Watch"></div><div class="back"><h3>Noir Leather Watch</h3><p>₹7,999</p><span class="btn">View</span></div></a>
-      <a href="product-3.html" class="product-card animate-flip"><div class="front"><img src="hoodie.jpg" alt="Shadow Hoodie"></div><div class="back"><h3>Shadow Hoodie</h3><p>₹2,899</p><span class="btn">View</span></div></a>
-      <a href="product-4.html" class="product-card animate-flip"><div class="front"><img src="backpack.jpg" alt="Blackout Backpack"></div><div class="back"><h3>Blackout Backpack</h3><p>₹4,200</p><span class="btn">View</span></div></a>
-      <a href="product-5.html" class="product-card animate-flip"><div class="front"><img src="headphones.jpg" alt="Obsidian Headphones"></div><div class="back"><h3>Obsidian Headphones</h3><p>₹5,799</p><span class="btn">View</span></div></a>
-    </div>
+    <section class="product-grid" aria-label="Product list">
+      <article class="product-card animate-flip">
+        <a href="product-1.html" title="Midnight Sneakers">
+          <div class="front"><img src="sneakers.jpg" alt="Midnight Sneakers"></div>
+          <div class="back"><h3>Midnight Sneakers</h3><p>₹3,499</p><span class="btn">View</span></div>
+        </a>
+      </article>
+      <article class="product-card animate-flip">
+        <a href="product-2.html" title="Noir Leather Watch">
+          <div class="front"><img src="watch.jpg" alt="Noir Leather Watch"></div>
+          <div class="back"><h3>Noir Leather Watch</h3><p>₹7,999</p><span class="btn">View</span></div>
+        </a>
+      </article>
+      <article class="product-card animate-flip">
+        <a href="product-3.html" title="Shadow Hoodie">
+          <div class="front"><img src="hoodie.jpg" alt="Shadow Hoodie"></div>
+          <div class="back"><h3>Shadow Hoodie</h3><p>₹2,899</p><span class="btn">View</span></div>
+        </a>
+      </article>
+      <article class="product-card animate-flip">
+        <a href="product-4.html" title="Blackout Backpack">
+          <div class="front"><img src="backpack.jpg" alt="Blackout Backpack"></div>
+          <div class="back"><h3>Blackout Backpack</h3><p>₹4,200</p><span class="btn">View</span></div>
+        </a>
+      </article>
+      <article class="product-card animate-flip">
+        <a href="product-5.html" title="Obsidian Headphones">
+          <div class="front"><img src="headphones.jpg" alt="Obsidian Headphones"></div>
+          <div class="back"><h3>Obsidian Headphones</h3><p>₹5,799</p><span class="btn">View</span></div>
+        </a>
+      </article>
+    </section>
   </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Shopping Bay. All rights reserved.</p>
+  </footer>
 </body>
 </html>
